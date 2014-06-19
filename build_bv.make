@@ -64,8 +64,6 @@ projects[nodejs][patch][] = https://www.drupal.org/files/issues/check-channel-ur
 ; Fix up socket.io transports. https://www.drupal.org/node/2288897
 projects[nodejs][patch][] = https://www.drupal.org/files/issues/tranports.patch
 
-projects[nodejs_chat][version] = 1.0
-
 ; Extra local modules.
 projects[devel][version] = 1.2
 
