@@ -46,35 +46,44 @@ projects[vopros_embed][download][type] = git
 projects[vopros_embed][download][url] = https://github.com/Biblioteksvagten/vopros_embed.git
 projects[vopros_embed][download][branch] = bv
 
+projects[vopros_chat][type] = module
+projects[vopros_chat][download][type] = git
+projects[vopros_chat][download][url] = https://github.com/reload/vopros_chat.git
+; Using master without the hardcoded bv texts.
+; projects[vopros_chat][download][branch] = bv
+
 
 ;;; Custom modules
 
-projects[devel][version] = 1.2
+; For vopros_chat.
+projects[nodejs][version] = 1.8
+; Fix missing session. https://www.drupal.org/node/2288625
+projects[nodejs][patch][] = https://www.drupal.org/files/issues/sessionid.patch
+; Revive checkChannel. https://www.drupal.org/node/2288629
+projects[nodejs][patch][] = https://www.drupal.org/files/issues/check-channel-url.patch
+; Fix up socket.io transports. https://www.drupal.org/node/2288897
+projects[nodejs][patch][] = https://www.drupal.org/files/issues/tranports.patch
 
+projects[nodejs_chat][version] = 1.0
+
+; Extra local modules.
+projects[devel][version] = 1.2
 
 projects[flood_control][version] = 1.0
 
-
 projects[keyboard_shortcut][version] = 1.2
-
 
 projects[l10n_client][version] = 1.1
 
-
 projects[l10n_update][version] = 1.0-beta3
-
 
 projects[media][version] = 1.4
 
-
 projects[scheduler][version] = 1.0
-
 
 projects[transliteration][version] = 3.0
 
-
 projects[wysiwyg][version] = 2.1
-
 
 projects[environment_indicator][version] = 2.2
 
