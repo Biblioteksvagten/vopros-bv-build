@@ -44,13 +44,13 @@ projects[finurlig_widget][download][url] = https://github.com/aakb/finurlig_widg
 projects[vopros_embed][type] = module
 projects[vopros_embed][download][type] = git
 projects[vopros_embed][download][url] = https://github.com/Biblioteksvagten/vopros_embed.git
-projects[vopros_embed][download][branch] = bv
+; Using master without the hardcoded bv texts.
+; projects[vopros_chat][download][branch] = bv
+
 
 projects[vopros_chat][type] = module
 projects[vopros_chat][download][type] = git
 projects[vopros_chat][download][url] = https://github.com/reload/vopros_chat.git
-; Using master without the hardcoded bv texts.
-; projects[vopros_chat][download][branch] = bv
 
 
 ;;; Custom modules
