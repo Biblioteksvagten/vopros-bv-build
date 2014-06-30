@@ -1,0 +1,99 @@
+diff -u -r new/.htaccess old/.htaccess
+--- new/.htaccess	2012-11-07 22:42:13.000000000 +0100
++++ old/.htaccess	2012-11-11 15:02:20.000000000 +0100
+@@ -129,3 +129,5 @@
+     </FilesMatch>
+   </IfModule>
+ </IfModule>
++redirect /node/3 /admin/vopros/questions/list?question_status=open&vopros_editorial_tid[value]=2&question_usage=All&subject_catagory_tid[value]=&order=created&sort=desc
++redirect /node/4 /admin/vopros/questions/list?question_status=open&vopros_editorial_tid[value]=1&question_usage=All&subject_catagory_tid[value]=&order=created&sort=desc
+diff -u -r new/robots.txt old/robots.txt
+--- new/robots.txt	2012-11-07 22:42:13.000000000 +0100
++++ old/robots.txt	2013-07-15 09:53:56.000000000 +0200
+@@ -17,44 +17,5 @@
+ # http://www.sxw.org.uk/computing/robots/check.html
+ 
+ User-agent: *
+-Crawl-delay: 10
+-# Directories
+-Disallow: /includes/
+-Disallow: /misc/
+-Disallow: /modules/
+-Disallow: /profiles/
+-Disallow: /scripts/
+-Disallow: /themes/
+-# Files
+-Disallow: /CHANGELOG.txt
+-Disallow: /cron.php
+-Disallow: /INSTALL.mysql.txt
+-Disallow: /INSTALL.pgsql.txt
+-Disallow: /INSTALL.sqlite.txt
+-Disallow: /install.php
+-Disallow: /INSTALL.txt
+-Disallow: /LICENSE.txt
+-Disallow: /MAINTAINERS.txt
+-Disallow: /update.php
+-Disallow: /UPGRADE.txt
+-Disallow: /xmlrpc.php
+-# Paths (clean URLs)
+-Disallow: /admin/
+-Disallow: /comment/reply/
+-Disallow: /filter/tips/
+-Disallow: /node/add/
+-Disallow: /search/
+-Disallow: /user/register/
+-Disallow: /user/password/
+-Disallow: /user/login/
+-Disallow: /user/logout/
+-# Paths (no clean URLs)
+-Disallow: /?q=admin/
+-Disallow: /?q=comment/reply/
+-Disallow: /?q=filter/tips/
+-Disallow: /?q=node/add/
+-Disallow: /?q=search/
+-Disallow: /?q=user/password/
+-Disallow: /?q=user/register/
+-Disallow: /?q=user/login/
+-Disallow: /?q=user/logout/
++
++Disallow: /
+diff -u -r new/themes/bartik/css/style.css old/themes/bartik/css/style.css
+--- new/themes/bartik/css/style.css	2012-11-07 22:42:13.000000000 +0100
++++ old/themes/bartik/css/style.css	2012-11-20 12:54:31.000000000 +0100
+@@ -3,6 +3,7 @@
+ 
+ body {
+   line-height: 1.5;
++  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+   font-size: 87.5%;
+   word-wrap: break-word;
+   margin: 0;
+@@ -106,7 +107,7 @@
+ #site-slogan,
+ .ui-widget,
+ .comment-form label {
+-  font-family: Georgia, "Times New Roman", Times, serif;
++  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; 
+ }
+ #header,
+ #footer-wrapper,
+@@ -121,8 +122,8 @@
+ p.comment-time,
+ table,
+ .breadcrumb {
+-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+-}
++  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; 
++  }
+ input,
+ textarea,
+ select,
+@@ -952,7 +953,7 @@
+ /* --------------- System Tabs  --------------- */
+ 
+ .tabs {
+-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
++  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif; 
+   margin-bottom: 20px;
+ }
+ .tabs ul.primary {
