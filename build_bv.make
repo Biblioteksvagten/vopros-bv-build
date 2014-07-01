@@ -64,6 +64,10 @@ projects[nodejs][patch][] = https://www.drupal.org/files/issues/check-channel-ur
 projects[nodejs][patch][] = https://www.drupal.org/files/issues/tranports.patch
 ; Fix https server start. https://www.drupal.org/node/2280989
 projects[nodejs][patch][] = http://cgit.drupalcode.org/nodejs/patch/?id=4c4e8c5d89395097c32e0d060caab96a050e1081
+; Add passphrase option to HTTPS server. https://www.drupal.org/node/2295635
+projects[nodejs][patch][] = https://www.drupal.org/files/issues/0001-Add-passphrase-option-to-HTTPS-server.patch
+; Allow extensions to alter settings. https://www.drupal.org/node/2295635
+projects[nodejs][patch][] = https://www.drupal.org/files/issues/0002-Allow-extensions-to-alter-settings.patch
 
 ; Extra local modules.
 projects[devel][version] = 1.2
