@@ -62,6 +62,8 @@ projects[nodejs][patch][] = https://www.drupal.org/files/issues/sessionid.patch
 projects[nodejs][patch][] = https://www.drupal.org/files/issues/check-channel-url.patch
 ; Fix up socket.io transports. https://www.drupal.org/node/2288897
 projects[nodejs][patch][] = https://www.drupal.org/files/issues/tranports.patch
+; Fix https server start. https://www.drupal.org/node/2280989
+projects[nodejs][patch][] = http://cgit.drupalcode.org/nodejs/patch/?id=4c4e8c5d89395097c32e0d060caab96a050e1081
 
 ; Extra local modules.
 projects[devel][version] = 1.2
