@@ -7,7 +7,7 @@ core = 7.x
 ;;; Core
 
 projects[drupal] = drupal
-projects[drupal][version] = 7.26
+projects[drupal][version] = 7.32
 ; githubusercontent seems to cache the file from the branch, so we
 ; point at a specific revision.
 projects[drupal][patch][] = https://raw.githubusercontent.com/Biblioteksvagten/vopros-bv-build/ebfbda7c7af2e56ab0c0e8edda29f81fc55f3f91/bibv.patch
