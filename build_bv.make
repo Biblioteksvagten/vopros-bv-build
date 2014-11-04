@@ -19,6 +19,12 @@ projects[vopros][download][url] = https://github.com/DBCDK/Vopros-install.git
 
 ;;; Biblioteksvagten specific additions
 
+
+projects[bv_cc_question][type] = module
+projects[bv_cc_question][download][type] = git
+projects[bv_cc_question][download][url] = https://github.com/Biblioteksvagten/bv_cc_question.git
+
+
 projects[bv_schema][type] = module
 projects[bv_schema][download][type] = git
 projects[bv_schema][download][url] = https://github.com/Biblioteksvagten/bv_schema.git
