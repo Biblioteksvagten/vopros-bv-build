@@ -108,3 +108,8 @@ libraries[ckeditor][destination] = libraries
 libraries[drush_bv_vopros][download][type] = get
 libraries[drush_bv_vopros][download][url] = https://raw.githubusercontent.com/Biblioteksvagten/vopros-bv-build/master/bv_vopros.drush.inc
 libraries[drush_bv_vopros][destination] = drush
+
+; Custom frontend theme.
+projects[watchmen][type] = theme
+projects[watchmen][download][type] = git
+projects[watchmen][download][url] = https://github.com/Biblioteksvagten/watchmen.git
