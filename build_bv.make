@@ -15,6 +15,7 @@ projects[drupal][patch][] = https://raw.githubusercontent.com/Biblioteksvagten/v
 projects[vopros][type] = profile
 projects[vopros][download][type] = git
 projects[vopros][download][url] = https://github.com/DBCDK/Vopros-install.git
+projects[vopros][download][revision] = 1926f4cf026168da2d2e91539ef546f13d8e5628
 
 
 ;;; Biblioteksvagten specific additions
